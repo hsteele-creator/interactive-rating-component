@@ -1,0 +1,41 @@
+body {
+    padding: 25% 0;
+    background-color: hsl(216, 12%, 8%)
+}
+
+.container {
+    text-align: left;
+    background-color: black;
+    color: white;
+    width: 375px;
+    margin: auto;
+    padding: 60px 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 15px;
+}
+
+.container p {
+    line-height: 1.5;
+}
+
+.button-class {
+    text-align: center;
+}
+
+.numbers {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.numbers button {
+    border-radius: 100%;
+    padding: 15px;
+    margin: 5px 10px;
+}
+
+.submit {
+    width: 80%;
+    border-radius: 10px;
+    padding: 6px;
+}
