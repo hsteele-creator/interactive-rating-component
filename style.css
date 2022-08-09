@@ -1,5 +1,5 @@
 body {
-    padding: 250px;
+    padding: 150px 0;
     background-color: hsl(216, 12%, 8%)
 }
 
@@ -7,9 +7,9 @@ body {
     text-align: left;
     background-color: black;
     color: white;
-    width: 375px;
+    width: 355px;
     margin: auto;
-    padding: 60px 20px;
+    padding: 60px 30px;
     background-color: hsl(213, 19%, 18%);
     border-radius: 15px;
 }
@@ -30,12 +30,20 @@ body {
 
 .numbers button {
     border-radius: 100%;
-    padding: 15px;
-    margin: 5px 10px;
+    padding: 20px;
+    margin: 10px 10px 20px 4px;
+    background-color: hsl(216, 12%, 54%);
+    border: none;
+    border: 1px solid black;
+    color: white;
 }
 
 .submit {
-    width: 80%;
-    border-radius: 10px;
-    padding: 6px;
+    width: 90%;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    font-size: 15px;
+    color: white;
 }
