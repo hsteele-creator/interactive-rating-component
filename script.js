@@ -2,8 +2,7 @@ const submitButton = document.querySelector("#submit-button");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
 const numberButtons = document.querySelectorAll(".btn");
-const thankYouContainer = document.querySelector(".thankyou-conatiner");
-let numberOfStars;
+const thankYouContainer = document.querySelector(".thankyou-conatainer");
 // const numberContainer = document.querySelector(".numbers");
 
 // numberContainer.addEventListener("click", function(e) {
@@ -22,12 +21,16 @@ let numberOfStars;
 for(let button of numberButtons) {
     button.addEventListener("click", function(e) {
 
-        numberOfStars = e.target.innerText;
-
         e.target.style.backgroundColor = "hsl(25, 97%, 53%)";
 
-        return numberOfStars;
+        localStorage.setItem("stars", e.target.innerText);
+
+        const starRating = document.createElement("p");
+        starRating.innerHTML = `You selected ${localStorage.getItem("stars")} out of 5`;
+
+        body.append(starRating);
 
     })
 }
 
+ 
