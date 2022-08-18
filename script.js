@@ -2,7 +2,8 @@ const submitButton = document.querySelector("#submit-button");
 const container = document.querySelector(".container");
 const body = document.querySelector("body");
 const numberButtons = document.querySelectorAll(".btn");
-const thankYouContainer = document.querySelector(".thankyou-conatainer");
+const thankYouContainer = document.querySelector(".thankyou-container");
+const stars = document.querySelector(".stars");
 // const numberContainer = document.querySelector(".numbers");
 
 // numberContainer.addEventListener("click", function(e) {
@@ -19,7 +20,7 @@ const thankYouContainer = document.querySelector(".thankyou-conatainer");
 // }) 
 
 for(let button of numberButtons) {
-    button.addEventListener("click", function(e) {
+    button.addEventListener("click", function buttons(e) {
 
         e.target.style.backgroundColor = "hsl(25, 97%, 53%)";
 
@@ -28,9 +29,20 @@ for(let button of numberButtons) {
         const starRating = document.createElement("p");
         starRating.innerHTML = `You selected ${localStorage.getItem("stars")} out of 5`;
 
-        body.append(starRating);
+        thankYouContainer.prepend(starRating);
 
     })
 }
+
+submitButton.addEventListener("click", function() {
+
+    container.classList.add("hidden");
+
+    thankYouContainer.classList.remove("hidden");
+
+
+
+    
+})
 
  
