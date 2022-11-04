@@ -31,6 +31,13 @@ for(let button of numberButtons) {
 
         thankYouContainer.prepend(starRating);
 
+
+        for(let button of numberButtons) {
+            button.disabled = true;
+        }
+
+        
+
     })
 }
 
